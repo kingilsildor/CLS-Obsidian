@@ -4,20 +4,20 @@ tags:
 ---
 
 # [[Topology]]
+
+| Topology               | *Number of nodes*               | *Diameter* | *Bisection* *width* | *Edges per node*    | *Implementation*                  |
+| ---------------------- | ------------------------------- | ---------- | ------------------- | ------------------- | --------------------------------- |
+| **Mesh**               | $k^2 \quad (k=\sqrt{p})$        | $2(k-1)$   | $k$                 | $\textasciitilde 4$ | Easy                              |
+| **Torus**              |                                 |            |                     |                     |                                   |
+| **Tree**               | $2^{h} - 1 \quad (h=\log^2(p))$ | $2h$       | $2^{h+1}$           | $\textasciitilde 6$ | Easy                              |
+| **Hypertree** **(4D)** | $2^{h}\;(2^{h+1}-1)$            | $2h$       | $2^{h+1}$           | $\textasciitilde 6$ | Only in theory                    |
+| **Hypercube**          | $2^{n}$                         | $n$        | $2^{k-1}$           | $n$                 | Complexer for multiple dimensions |
 [[Mesh]]
+[[Torus]]
 [[Binary Tree]]
-Fat tree is an engineering solution and they will limit the amount of connections higher-up in the tree. In theory unlimited connections can occur  
+[[Hyper Tree]]
+[[Fat Tree]]
 [[Hypercube]]
-
-## Advantages and disadvantages
-
-| Topology      | *Number of nodes*        | *Diameter* | *Bisection* *width* | *Edges per node*    | *Implementation* |
-| ------------- | ------------------------ | ---------- | ------------------- | ------------------- | ---------------- |
-| **Mesh**      | $k^2 \quad (k=\sqrt{p})$ | $2(k-1)$   | $k$                 | $\textasciitilde 4$ |                  |
-| **Torus**     |                          |            |                     |                     |                  |
-| **Tree**      | $2^{h} -1$               | $2*h$      | $2^{h+1}$           | $\textasciitilde 6$ |                  |
-| **Hypercube** |                          |            | $2^{k-1}$           |                     |                  |
-|               |                          |            |                     |                     |                  |
 
 # Use of multiple topologies
 When building a cluster computing of cheap commodities you are not going to use different topologies. But for super computers different topologies are used for different applications. 
