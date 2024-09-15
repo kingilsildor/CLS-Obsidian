@@ -13,7 +13,7 @@ $$\text{Lotka–Volterra equations}$$
 ![[Modelling & Simulation Cycle.png]]
 The [modelling & simulation cycle](Modelling%20&%20Simulation%20Cycle.md) to recreate patterns from data analysis. 
 
-The [difference between Data Science and Computational Science](Computational%20Science%20VS%20Data%20Science) is: Computational Science is more than prediction but  understanding, or asking why something happens.
+The [difference between Data Science and Computational Science](Computational%20Science%20VS%20Data%20Science) is: Computational Science is more than prediction but understanding, or asking why something happens.
 Whereby Data Science is based on the philosophy of [[Francis Bacon]], Computational Science is based on the ideas created by [[Karl Popper]].
 People can predict but that doesn't mean that they understand the underlining principles.
 A model can and should be changed when the result doesn't match the theory.
