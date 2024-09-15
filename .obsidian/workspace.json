@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "2f2d010b94427835",
+    "type": "split",
+    "children": [
+      {
+        "id": "5da28ffce4fb7467",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "574dcb2fc2dce129",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "80c4631a38d24948",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e52d4549e3a0a2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8fdfa10f5e6504bb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eb901dd85537439f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "27a3f69dd104802d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "40b037e5af9b97b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5402fbf17c473ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cac1f22e3836f42c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "48cfc72ec1de3d6c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3fd6778e669248b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "6cb8291432bc90ce",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "574dcb2fc2dce129",
+  "lastOpenFiles": [
+    "_images/Pasted image 20240915211156.png",
+    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
+    "Master CLS Dashboard.md",
+    "Simulation.md",
+    "Quotes.md",
+    "Ordinary.md",
+    "Ordinary Differential Equation.md",
+    "_images/Pasted image 20240915211139.png",
+    "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
+    "Mathematical Model.md",
+    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
+    "_images/images.png",
+    "Continuous-Time Models.md",
+    "_images/Pasted image 20240915202109.png",
+    "_images/Pasted image 20240915170116.png",
+    "Epid.md",
+    "Introduction_to_Computational_Science/Introduction to Computational Science.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "_images/Pasted image 20240915165605.png",
+    "Epidemiology.md",
+    "Introduction_to_Computational_Science/Literature checklist.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Tasks/temp.md",
+    "Tasks/2024-09-06.md",
+    "_images/Pasted image 20240911124645.png",
+    "t.md",
+    "Introduction_to_Computational_Science/Topics/Modelling & Simulation Cycle.md",
+    "Introduction_to_Computational_Science/Topics/Mathematical Model.md"
+  ]
+}

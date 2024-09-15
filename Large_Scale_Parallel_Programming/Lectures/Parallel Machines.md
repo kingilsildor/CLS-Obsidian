@@ -73,7 +73,7 @@ Current day CPU's have a large cache designed to store frequently accessed data 
 
 In contrast the CPU the GPU are undoing all the architecture upgrades that happened the last decade to the CPU. Instead of being good at everything it has a large amount of smaller chips that can do a massive amount of small computations. These computations aren't complex but you can parallelized it easier. 
 ![[Pasted image 20240911115707.png]]
-## [[Shared-memory multiprocessors]]
+## [[Shared-Memory Multiprocessors]]
 Multiple processors accessing a common global shared-memory space connected via a bus, to work on tasks. Each processor can read from and write to this shared memory.
 
 Within this architecture the bus can become the bottle neck of the system because all the data needs to flow through it.  A cache can be added to decrease the traffic of the bus so that frequently accessed data is stored locally.
