@@ -11,6 +11,9 @@ action QuickAdd: test
 
 # TA
 [[Keerpunten in de Informatiewetenschap]]
+[[IJmond Project]]
 
+# Topics
+[[Mathematics]]
 # Quotes
 **Francois Cellier:** Only an idiot uses [simulation](Simulation) in place of [analytical techniques](Mathematical%20Model)

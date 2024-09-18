@@ -3,7 +3,8 @@ A short explanation of Computational Science is doing science with/using compute
 Whereby science is the activity to understand the world around us using observation and experiments.
 
 You can look at nature as it is or to all the different systems that are in place within nature, for example the [mathmetical models](Mathematical%20Model.md).
-$$\begin{align*}
+$$
+\begin{align*}
 \frac{dx}{dt} &= \alpha x - \beta xy \\
 \frac{dy}{dt} &= \delta xy - \gamma y \\
 \end{align*}
