@@ -11,24 +11,15 @@
             "id": "574dcb2fc2dce129",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "8b297739cfefb67a",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Math/Calculus.md",
+                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Math/Calculus.md",
+                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Math/Calculus.md",
+                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Math/Calculus.md"
+                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md"
               }
             }
           }
@@ -157,16 +148,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8b297739cfefb67a",
+  "active": "574dcb2fc2dce129",
   "lastOpenFiles": [
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
+    "Jacobi.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
+    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
+    "Math/Calculus.md",
     "Keerpunten_in_de_Informatiewetenschap/Werkcollege 1.md",
     "Keerpunten_in_de_Informatiewetenschap/Werkgroepen.md",
-    "Math/Calculus.md",
     "IJmond Project.md",
     "Math/Linear Algebra.md",
     "Master CLS Dashboard.md",
-    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
-    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
     "Trigonometric Functions.md",
     "Math",
     "_images/Pasted image 20240915211156.png",
@@ -175,7 +172,6 @@
     "Ordinary.md",
     "Ordinary Differential Equation.md",
     "_images/Pasted image 20240915211139.png",
-    "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
     "Mathematical Model.md",
     "_images/images.png",
     "Continuous-Time Models.md",
@@ -183,15 +179,10 @@
     "_images/Pasted image 20240915170116.png",
     "Epid.md",
     "Introduction_to_Computational_Science/Introduction to Computational Science.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
     "_images/Pasted image 20240915165605.png",
     "Epidemiology.md",
     "Introduction_to_Computational_Science/Literature checklist.md",
-    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
     "Tasks/temp.md",
-    "Tasks/2024-09-06.md",
-    "_images/Pasted image 20240911124645.png",
-    "t.md",
-    "Introduction_to_Computational_Science/Topics/Modelling & Simulation Cycle.md"
+    "_images/Pasted image 20240911124645.png"
   ]
 }
