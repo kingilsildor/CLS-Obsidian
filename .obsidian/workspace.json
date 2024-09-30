@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "b64bc77376d9d7fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "eac0fdd96ce39e0a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfa54a6d19ef2b12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Master CLS Dashboard.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bb77535376c03667",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0d8a055cde26df06",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d11b6947c316e7a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d89e2c9b8a7ae979",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "beaf8fea78a4e18b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3b8340197558c58b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "122f23d599ee3cbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "d12bd61f52b4ddff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9eedfd874fa9520",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0531fe53fd834107",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "41d934e3f3729903",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b236d44760a9357c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "daily-notes:Open today's note": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "bb77535376c03667",
+  "lastOpenFiles": [
+    "Pasted image 20240930101844.png",
+    "Master CLS Dashboard.md",
+    "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
+    "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+    "Pasted image 20240930100652.png",
+    "Pasted image 20240930093822.png",
+    "2024-09-30.md",
+    "Untitled.canvas",
+    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
+    "README.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "_images/Pasted image 20240911124645.png",
+    "_images/Pasted image 20240911123225.png",
+    "t.md",
+    "test.md",
+    "y.md"
+  ]
+}
