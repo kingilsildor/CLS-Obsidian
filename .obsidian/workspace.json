@@ -1,22 +1,18 @@
 {
   "main": {
-    "id": "2f2d010b94427835",
+    "id": "b64bc77376d9d7fb",
     "type": "split",
     "children": [
       {
-        "id": "5da28ffce4fb7467",
+        "id": "9d2876e056f68d5f",
         "type": "tabs",
         "children": [
           {
-            "id": "574dcb2fc2dce129",
+            "id": "8c5534214fee77e2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -25,15 +21,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "80c4631a38d24948",
+    "id": "0d8a055cde26df06",
     "type": "split",
     "children": [
       {
-        "id": "5e52d4549e3a0a2c",
+        "id": "5d11b6947c316e7a",
         "type": "tabs",
         "children": [
           {
-            "id": "8fdfa10f5e6504bb",
+            "id": "d89e2c9b8a7ae979",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +39,7 @@
             }
           },
           {
-            "id": "eb901dd85537439f",
+            "id": "beaf8fea78a4e18b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +54,7 @@
             }
           },
           {
-            "id": "27a3f69dd104802d",
+            "id": "3b8340197558c58b",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,21 +68,20 @@
     "width": 300
   },
   "right": {
-    "id": "40b037e5af9b97b3",
+    "id": "122f23d599ee3cbb",
     "type": "split",
     "children": [
       {
-        "id": "b5402fbf17c473ce",
+        "id": "d12bd61f52b4ddff",
         "type": "tabs",
         "children": [
           {
-            "id": "cac1f22e3836f42c",
+            "id": "d9eedfd874fa9520",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -97,19 +92,18 @@
             }
           },
           {
-            "id": "48cfc72ec1de3d6c",
+            "id": "0531fe53fd834107",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "3fd6778e669248b5",
+            "id": "41d934e3f3729903",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,17 +114,14 @@
             }
           },
           {
-            "id": "6cb8291432bc90ce",
+            "id": "b236d44760a9357c",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md"
-              }
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,50 +130,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "daily-notes:Open today's note": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "574dcb2fc2dce129",
+  "active": "8c5534214fee77e2",
   "lastOpenFiles": [
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
-    "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
-    "Jacobi.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
-    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
-    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
-    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
-    "Math/Calculus.md",
-    "Keerpunten_in_de_Informatiewetenschap/Werkcollege 1.md",
-    "Keerpunten_in_de_Informatiewetenschap/Werkgroepen.md",
-    "IJmond Project.md",
-    "Math/Linear Algebra.md",
-    "Master CLS Dashboard.md",
-    "Trigonometric Functions.md",
-    "Math",
-    "_images/Pasted image 20240915211156.png",
-    "Simulation.md",
-    "Quotes.md",
-    "Ordinary.md",
-    "Ordinary Differential Equation.md",
-    "_images/Pasted image 20240915211139.png",
-    "Mathematical Model.md",
     "_images/images.png",
-    "Continuous-Time Models.md",
+    "_images/Pasted image 20240915211156.png",
+    "_images/Pasted image 20240915211139.png",
     "_images/Pasted image 20240915202109.png",
     "_images/Pasted image 20240915170116.png",
-    "Epid.md",
-    "Introduction_to_Computational_Science/Introduction to Computational Science.md",
     "_images/Pasted image 20240915165605.png",
-    "Epidemiology.md",
-    "Introduction_to_Computational_Science/Literature checklist.md",
-    "Tasks/temp.md",
-    "_images/Pasted image 20240911124645.png"
+    "_images/Pasted image 20240911124645.png",
+    "_images/Pasted image 20240911123225.png",
+    "_images/Pasted image 20240911115707.png",
+    "_images/Pasted image 20240911115055.png",
+    "_images/Pasted image 20240911115038.png",
+    "Math/Linear Algebra.md",
+    "Math/Calculus.md",
+    "Math",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
+    "Jacobi.md",
+    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
+    "IJmond Project.md",
+    "y.md",
+    "test.md",
+    "t.md",
+    "Untitled.md",
+    "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+    "Master CLS Dashboard.md",
+    "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
+    "2024-09-30.md",
+    "Untitled.canvas",
+    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
+    "README.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md"
   ]
 }
