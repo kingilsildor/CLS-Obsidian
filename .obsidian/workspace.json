@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "eac0fdd96ce39e0a",
+        "id": "9d2876e056f68d5f",
         "type": "tabs",
         "children": [
           {
-            "id": "cfa54a6d19ef2b12",
+            "id": "8c5534214fee77e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Master CLS Dashboard.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bb77535376c03667",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+                "file": "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "122f23d599ee3cbb",
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+                "file": "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
+                "file": "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introduction_to_Computational_Science/Lectures/Stochastic Models.md"
+                "file": "Large_Scale_Parallel_Programming/Lectures/Untitled.md"
               }
             }
           }
@@ -161,12 +147,14 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "bb77535376c03667",
+  "active": "8c5534214fee77e2",
   "lastOpenFiles": [
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
+    "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
     "Pasted image 20240930101844.png",
     "Master CLS Dashboard.md",
     "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
-    "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
     "Pasted image 20240930100652.png",
     "Pasted image 20240930093822.png",
     "2024-09-30.md",
@@ -176,7 +164,6 @@
     "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
     "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
     "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
     "_images/Pasted image 20240911124645.png",
     "_images/Pasted image 20240911123225.png",
     "t.md",
