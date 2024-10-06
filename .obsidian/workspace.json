@@ -8,41 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8c5534214fee77e2",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "_images/Pasted image 20240930100652.png"
-              }
-            }
-          },
-          {
             "id": "61327f0bba435a37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
+                "file": "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "1bc6c8ffac542867",
+            "id": "d326934a657ade51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Parallel Algorithms.md",
+                "file": "Modelling Infectious Diseases.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "122f23d599ee3cbb",
@@ -108,8 +99,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Parallel Algorithms.md",
-                "collapseAll": false,
+                "file": "Modelling Infectious Diseases.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -125,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Parallel Algorithms.md",
+                "file": "Modelling Infectious Diseases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,11 +139,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Parallel Algorithms.md"
+                "file": "Modelling Infectious Diseases.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -170,31 +162,36 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1bc6c8ffac542867",
+  "active": "d326934a657ade51",
   "lastOpenFiles": [
+    "Pasted image 20241004104735.png",
+    "Pasted image 20241004104723.png",
+    "Pasted image 20241004104709.png",
+    "Pasted image 20241004104655.png",
+    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
+    "Modelling Infectious Diseases.md",
+    "Large_Scale_Parallel_Programming/Lectures/Distributed computing in Julia.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "2024-10-02.md",
     "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
-    "Parallel Algorithms.md",
-    "Parallel Algorithms",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "_images/Pasted image 20241002110234.png",
+    "_images/Pasted image 20241002093611.png",
+    "_images/Pasted image 20241002102507.png",
+    "_images/Pasted image 20241002105432.png",
     "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "_images/Pasted image 20241002102435.png",
+    "_images/Pasted image 20241002102413.png",
+    "Math/Linear Algebra.md",
+    "_images/Pasted image 20240930100652.png",
+    "().md",
+    "Parallel Algorithms",
     "Jacobi.md",
     "IJmond Project.md",
-    "_images/Pasted image 20240930101844.png",
-    "_images/Pasted image 20240930100652.png",
     "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
-    "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
-    "_images/images.png",
-    "_images/Pasted image 20240915211156.png",
-    "_images/Pasted image 20240915211139.png",
-    "_images/Pasted image 20240915202109.png",
-    "_images/Pasted image 20240915170116.png",
-    "_images/Pasted image 20240915165605.png",
-    "_images/Pasted image 20240911124645.png",
-    "_images/Pasted image 20240911123225.png",
-    "Math/Linear Algebra.md",
     "Math/Calculus.md",
     "Math",
-    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
     "y.md",
     "test.md",
     "t.md",
@@ -204,7 +201,6 @@
     "2024-09-30.md",
     "Untitled.canvas",
     "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
-    "README.md",
-    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md"
+    "README.md"
   ]
 }
