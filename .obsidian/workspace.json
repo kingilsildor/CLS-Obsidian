@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Modelling Infectious Diseases.md",
+                "file": "Large_Scale_Parallel_Programming/Applications.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Modelling Infectious Diseases.md",
+                "file": "Large_Scale_Parallel_Programming/Applications.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Modelling Infectious Diseases.md",
+                "file": "Large_Scale_Parallel_Programming/Applications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Modelling Infectious Diseases.md"
+                "file": "Large_Scale_Parallel_Programming/Applications.md"
               }
             }
           }
@@ -164,12 +164,14 @@
   },
   "active": "d326934a657ade51",
   "lastOpenFiles": [
+    "Pasted image 20241008125549.png",
+    "Modelling Infectious Diseases.md",
+    "Large_Scale_Parallel_Programming/Applications.md",
     "Pasted image 20241004104735.png",
     "Pasted image 20241004104723.png",
     "Pasted image 20241004104709.png",
     "Pasted image 20241004104655.png",
     "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
-    "Modelling Infectious Diseases.md",
     "Large_Scale_Parallel_Programming/Lectures/Distributed computing in Julia.md",
     "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
     "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
@@ -184,7 +186,6 @@
     "_images/Pasted image 20241002102435.png",
     "_images/Pasted image 20241002102413.png",
     "Math/Linear Algebra.md",
-    "_images/Pasted image 20240930100652.png",
     "().md",
     "Parallel Algorithms",
     "Jacobi.md",
