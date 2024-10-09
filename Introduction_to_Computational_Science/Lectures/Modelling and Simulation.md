@@ -43,14 +43,19 @@ Some models can be solved analytically, other models need a simulation to do tha
 # What is a Simulation?
 A [simulation](Simulation) is an experiment performed on a mathematical model.
 Creating simulations is sometimes cheaper and more ethical than doing real world experiments. 
-But be aware of the assumptions, because simulations can go wrong.
+
+**But be aware of the assumptions, because simulations can go wrong.**
 # Why do we Model?
-To:
 1. Explain
 2. Predict
 3. Understand
 4. Discover new questions
 5. enz..
+
+> Epstein & Joshua (2008) 'Why Model?'
+# Way Simulate vs Analytics
+#TODO
+
 # Overview of Mathematical Models
 Different ways to look at the relationships between the input and time
 ## [[Continuous-Time Models]]
