@@ -89,5 +89,3 @@ For coupled stock this results into sets of coupled ODE's, which can be nonlinea
 - Stability Analysis
 - Oscillatory Dynamics
 
-#
-$\lambda$

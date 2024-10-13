@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8c91feb6b54c057a",
+        "id": "a6b73b5cf5821b4a",
         "type": "tabs",
         "children": [
           {
-            "id": "ae2a5a09c66f3989",
+            "id": "9ab71d100f8db701",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "c9d4e4549dcf4cc9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d3af2931fa3bb4db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Temporal Forcing.md",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "122f23d599ee3cbb",
@@ -104,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Temporal Forcing.md",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Temporal Forcing.md",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Temporal Forcing.md"
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/MPI.md"
               }
             }
           }
@@ -167,48 +148,49 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d3af2931fa3bb4db",
+  "active": "9ab71d100f8db701",
   "lastOpenFiles": [
-    "Pasted image 20241009114901.png",
-    "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
-    "Temporal Forcing.md",
-    "Pasted image 20241009112636.png",
-    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
-    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
-    "Introduction_to_Computational_Science/Lectures/Introduction to Infectious Disease.md",
-    "_images/Pasted image 20241009100451.png",
-    "Modelling Infectious Diseases.md",
-    "Jacobi.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Julia.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Asynchronous and distributed computing.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Algorithm Applications.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Lectures/Untitled.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
+    "Large_Scale_Parallel_Programming/Applications.md",
+    "Large_Scale_Parallel_Programming/Exam Prep",
     "Different Models.md",
+    "Introduction_to_Computational_Science/Introduction to Computational Science.md",
+    "Introduction_to_Computational_Science/Lectures/Introduction to Infectious Disease.md",
+    "Modelling Infectious Diseases.md",
+    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md",
+    "_images/Pasted image 20241009112636.png",
+    "_images/Pasted image 20241009114901.png",
+    "Temporal Forcing.md",
+    "Master CLS Dashboard.md",
+    "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
+    "IJmond Project.md",
+    "Math/Jacobi.md",
+    "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
+    "_images/Pasted image 20241009100451.png",
     "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
     "_images/Pasted image 20241009100218.png",
-    "Master CLS Dashboard.md",
     "_images/Pasted image 20241009093648.png",
     "_images/Pasted image 20240915165605.png",
     "_images/Pasted image 20241009093339.png",
     "Introduction_to_Computational_Science/Lectures/Different Models",
     "Model.md",
     "Introduction_to_Computational_Science/Lectures/Models",
-    "Large_Scale_Parallel_Programming/Applications.md",
     "_images/Pasted image 20241008125549.png",
     "_images/Pasted image 20241004104735.png",
     "_images/Pasted image 20241004104723.png",
-    "_images/Pasted image 20241004104709.png",
     "Large_Scale_Parallel_Programming/Lectures/Distributed computing in Julia.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
     "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
     "2024-10-02.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
-    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
-    "Math/Linear Algebra.md",
-    "().md",
     "Parallel Algorithms",
-    "IJmond Project.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md",
-    "Math/Calculus.md",
     "Math",
-    "y.md",
     "Untitled.canvas"
   ]
 }

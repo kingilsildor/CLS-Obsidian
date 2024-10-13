@@ -5,3 +5,6 @@ Rules:
 Parameter $\alpha$
 
 # Lotka Voltera Model
+
+# Multi-Scale Modelling
+
