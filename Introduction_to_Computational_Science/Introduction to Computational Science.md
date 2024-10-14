@@ -7,7 +7,9 @@ tags:
 # Lectures
 Module 1 - [[Modelling and Simulation]]
 Module 2 - [[Complexity and Infectious Diseases]]
-Module 3 - [[Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases]]
+Module 3 - 
+Module 3 - [[Modelling Infectious Diseases]]
+
 # General Information
 ## Aim
 The aim of this course is to provide an overview of Computational Science and modelling techniques available to the Computational Scientist. We will do this by considering one specific application (spreading of infectious diseases) and formulating different types of models and simulations, thus not only exploring the rich set of modelling paradigms available to us, but also diving deep in the specific application field. You will also be exposed to recent research results from the Computational Science Lab, to see other examples of Computational Science in action.
