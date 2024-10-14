@@ -4,34 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9d2876e056f68d5f",
+        "id": "9e42a6fdcc75d1e4",
         "type": "tabs",
         "children": [
           {
-            "id": "61327f0bba435a37",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "_images/Pasted image 202410041046555.png"
-              }
-            }
-          },
-          {
-            "id": "d326934a657ade51",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "60d40f701927071a",
+            "id": "8ecfb97db09a244c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_images/Pasted image 202410041046555.png",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,9 +102,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_images/Pasted image 202410041046555.png",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_images/Pasted image 202410041046555.png"
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md"
               }
             }
           }
@@ -165,45 +147,47 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "d89e2c9b8a7ae979",
+  "active": "8ecfb97db09a244c",
   "lastOpenFiles": [
-    "_images/Pasted image 202410041047355.png",
-    "_images/Pasted image 202410041047235.png",
-    "_images/Pasted image 202410041047095.png",
-    "_images/Pasted image 202410041046555.png",
+    "_images/4514-660.png",
+    "_images/unnamed.png",
+    "_images/tree_height.png",
+    "_images/SuperComputing_reference.png",
+    "_images/Pasted image 20241014173754.png",
+    "_images/Pasted image 20241014173630.png",
+    "_images/Flit-and-Wormhole-Routing-of-Packet-3795681904.png",
+    "_images/Fat_tree_network.svg.png",
+    "_images/beowulf-892673119.png",
+    "_images/A-Four-dimensional-hypercube-System-52-Hypercubic-P2P-Grid-Topology-The-Hypercubic-P2P.png",
+    "_images/A-distributed-memory-multiprocessor-The-key-distinction-between-this-and-the-shared-bus_Q320.jpg",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Julia.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Applications.md",
+    "Math/Topology.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Algorithm Applications.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Asynchronous and distributed computing.md",
+    "Temporal Forcing.md",
+    "Math/Jacobi.md",
+    "Large_Scale_Parallel_Programming/Exam Prep",
+    "Introduction_to_Computational_Science/Lectures/Introduction to Infectious Disease.md",
+    "Different Models.md",
     "Modelling Infectious Diseases.md",
-    "Pasted image 20241006145604.png",
     "Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases.md",
     "Master CLS Dashboard.md",
     "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
     "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
     "Introduction_to_Computational_Science/Introduction to Computational Science.md",
     "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
-    "Pasted image 20241006112939.png",
-    "Pasted image 20241006110734.png",
-    "Pasted image 20241006110715.png",
-    "Pasted image 20241004104655 1.png",
     "Large_Scale_Parallel_Programming/Lectures/Distributed computing in Julia.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
     "2024-10-02.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
-    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
-    "_images/Pasted image 20241002110234.png",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
-    "Math/Linear Algebra.md",
-    "().md",
     "Parallel Algorithms",
-    "Jacobi.md",
-    "IJmond Project.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md",
-    "Math/Calculus.md",
     "Math",
-    "y.md",
-    "test.md",
-    "t.md",
-    "2024-09-30.md",
-    "Untitled.canvas",
-    "Introduction_to_Computational_Science/Lectures/Modelling and Simulation.md"
+    "Untitled.canvas"
   ]
 }

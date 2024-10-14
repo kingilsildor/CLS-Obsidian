@@ -5,6 +5,7 @@ tags:
 # Important Dates
 
 # Lectures
+<<<<<<< HEAD
 Module 1 - [[Modelling and Simulation]]
 Module 2 - [[Complexity and Infectious Diseases]]
 Module 3 - 
@@ -26,4 +27,14 @@ During 7 weeks there will be two lectures per week, two lab sessions per week (o
 A large part of the content of this course is inspired by the book "Modeling Infectious Diseases in Humans and Animals" by Matt Keeling and Pejman Rohani. To follow the course and do the exam, it is not strictly needed to buy this book. However, if you find this topic interesting and want to go a bit deeper and see many very good examples, you are strongly advised to buy the book.
 
 The book is accompanied by a website, where you can find code snippets (o.a. in Python) of many of the models that are discussed in the book and also in the course. Take your advantage of this. But as always, if you do so, mention this in your report, and in your own code, clearly disclose the source of some of the code. As in scientific papers, also in scientific software we want to give complete credit to colleagues whose work we are using for our own research.
+=======
+Module 1 - [[Modelling and Simulation]] (done)
+Module 2 - [[Introduction to Infectious Disease]] (done)
+Module 3 - [[Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases]]
+Module 4 - [[Temporal Forcing]]
+Module 5 - [[Stochastic Models]]
+Module 6 - Metapopulation
+Module 7 - Networks
+Module 8 - Agent based models
+>>>>>>> e080e29b1b40cbb9d0e39e29115f5a6ec199a0cb
 

@@ -146,8 +146,19 @@ $$\frac{dQ(t)}{dt} = \sum_{i=1}^{n}{F_i}$$
 With $F_i$ all flows into the stock or out of the stock.
 For coupled stock this results into sets of coupled ODE's, which can be nonlinear if flows are nonlinear in the stocks themselves.
 
+<<<<<<< HEAD
 ## Phase Plots
 ## Epidemic Threshold & Burnout
 ## Fixed Points
 ## Stability Analysis
 ## Oscillatory Dynamics
+=======
+
+- System Dynamics /  Stock Flow
+- Phase Plot
+- Epidemic Threshold & Burnout
+- Fixed Points
+- Stability Analysis
+- Oscillatory Dynamics
+
+>>>>>>> e080e29b1b40cbb9d0e39e29115f5a6ec199a0cb
