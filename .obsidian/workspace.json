@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "9e42a6fdcc75d1e4",
+        "id": "ab0093870be071a9",
         "type": "tabs",
         "children": [
           {
-            "id": "8ecfb97db09a244c",
+            "id": "7db679bc75f1bf40",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+                "file": "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c056da9edd35b104",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md"
+                "file": "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md"
               }
             }
           }
@@ -147,31 +160,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8ecfb97db09a244c",
+  "active": "c056da9edd35b104",
   "lastOpenFiles": [
+    "Untitled 5.png",
+    "Untitled 4.png",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
+    "Large_Scale_Parallel_Programming/Applications.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Asynchronous and distributed computing.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Algorithm Applications.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Julia.md",
+    "Large_Scale_Parallel_Programming/Lectures/Distributed computing in Julia.md",
+    "Untitled 3.png",
+    "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+    "Untitled 2.png",
+    "Untitled.png",
+    "Untitled 1.png",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
+    "Large_Scale_Parallel_Programming/Lectures/Introduction to Julia.md",
+    "Cen.md",
+    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
+    "how_circuit_switching_works-f_mobile-966466774.png",
     "_images/4514-660.png",
     "_images/unnamed.png",
     "_images/tree_height.png",
     "_images/SuperComputing_reference.png",
-    "_images/Pasted image 20241014173754.png",
-    "_images/Pasted image 20241014173630.png",
-    "_images/Flit-and-Wormhole-Routing-of-Packet-3795681904.png",
-    "_images/Fat_tree_network.svg.png",
-    "_images/beowulf-892673119.png",
-    "_images/A-Four-dimensional-hypercube-System-52-Hypercubic-P2P-Grid-Topology-The-Hypercubic-P2P.png",
-    "_images/A-distributed-memory-multiprocessor-The-key-distinction-between-this-and-the-shared-bus_Q320.jpg",
-    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Julia.md",
-    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
-    "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
-    "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
-    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md",
-    "Large_Scale_Parallel_Programming/Lectures/Introduction to Programming Large-scale Parallel Systems.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Algorithms.md",
-    "Large_Scale_Parallel_Programming/Applications.md",
     "Math/Topology.md",
-    "Large_Scale_Parallel_Programming/Lectures/Parallel Machines.md",
-    "Large_Scale_Parallel_Programming/Exam Prep/Algorithm Applications.md",
-    "Large_Scale_Parallel_Programming/Exam Prep/Asynchronous and distributed computing.md",
     "Temporal Forcing.md",
     "Math/Jacobi.md",
     "Large_Scale_Parallel_Programming/Exam Prep",
@@ -182,10 +199,6 @@
     "Master CLS Dashboard.md",
     "Introduction_to_Computational_Science/Lectures/Stochastic Models.md",
     "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
-    "Introduction_to_Computational_Science/Introduction to Computational Science.md",
-    "Introduction_to_Computational_Science/Lectures/Complexity and Infectious Diseases.md",
-    "Large_Scale_Parallel_Programming/Lectures/Distributed computing in Julia.md",
-    "2024-10-02.md",
     "Parallel Algorithms",
     "Math",
     "Untitled.canvas"
