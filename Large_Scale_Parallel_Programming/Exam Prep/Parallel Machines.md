@@ -1,31 +1,38 @@
 # History of Parallel Machines
 **1967:**
 - First parallel computer (ILLIAC IV)
+
 **1970s:**
 - Programming methods
 - Experimental machines
 - Vector computers
+
 **1980s:**
 - Parallel languages (SR, Linda, Orca) 
 - Commercial supercomputers
+
 **1990s:**
 - Software standardization (MPI) 
 - Large-scale machines (Blue Gene)
 - Massively Parallel Processors (MPPs)
 - Standard microprocessors, special network and I/O
+
 **2000s:**
 - Cluster computing (using standard PCs)
 - Grid computing
 - Advanced architectures (Blue Gene)
 - Comeback of vector computing
 - IBM Cell/BE
+
 **2010s:**
 - Multi-cores
 - GPUs
 - Intel Phi
 - Cloud data centers
-
 ## Clusters
+> Combination of multiple clusters together (local and homogenous)
+They are used as a unified computing resource
+
 A computer cluster is a set of computers that work together so that they can be viewed as a single system. Unlike grid computers, computer clusters have each node set to perform the same task, controlled and scheduled by software. The newest manifestation of cluster computing is cloud computing. 
 
 They use a good price/performance ratio and can be made by standard PCs.
@@ -34,17 +41,48 @@ But the communication performance was the key difference.
 
 ![[beowulf-892673119.png]]
 ## Grid computing
+> A network of machines working together to perform a task. Can have different hardware configurations.
+
 Grid computing is the use of widely distributed computer resources to reach a common goal. A computing grid can be thought of as a distributed system with non-interactive workloads that involve many files. Grid computing is distinguished from conventional high-performance computing systems such as cluster computing in that grid computers have each node set to perform a different task/application. Grid computers also tend to be more heterogeneous and geographically dispersed (thus not physically coupled) than cluster computers. Although a single grid can be dedicated to a particular application, commonly a grid is used for a variety of purposes. Grids are often constructed with general-purpose grid middleware software libraries. Grid sizes can be quite large.
 ![[unnamed.png]]
+
+## Multicores
+> A microprocessor on a single integrated circuit with two or more CPU's connected via a bus.
+Is limited by the bus band width.
 ## Performance Development
 Performance of supercomputers in the Top500 list between 1992 and 2023. The different lines present the accumulated performance of all computers in the list (green), and the performance of the top (#1, brown) and last (#500, blue) in each list.
 ![[Performance-of-supercomputers-in-the-Top500-list-between-1992-and-2023-The-different.jpg]]
 ## Architecture Development
 
 ![[SuperComputing_reference.png]]
-# Why do we need parallel processing?
-In the current day and age many applications require a huge amount of computer power.
-Besides the sequential cores have reached their speed limits.
+# Applications
+- [Computational science](Computational Science)
+	- Modelling ozone layer
+	- Global climate modeling
+	- Quantum chemistry
+	- Protein folding
+	- Pandemic simulations
+- Engineering
+	- Aircraft modeling
+	- Formula-1
+- Handling big data from scientific instruments
+	- Lofar, SKA (astronomy)
+	- LHC (CERN, high-energy physics)
+- [[Artificial Intelligence]]
+	- Computer chess
+	- Analysing multimedia content
+	- Deep Learning
+# Parallel Processing
+## What is Parallel Programming?
+In contrast to [sequential programming](Sequential%20Programming) [parallel programming](Parallel%20Programming) uses multiple threads of control.
+Because of this these programs can handle multiple activities at the same time.
+
+In the current day a lot of systems handle parallel processes. These parallel processes are crucial for [high-performance computing](High-Performance%20Computing).
+
+## Why do we need parallel processes?
+In some fields a lot of data needs to be collected or analysed. For this to work you are required to have a lot of computing power to handle all this data. Parallel computing is then you to efficiently distribute all the calculations over the different systems.
+
+Sequential cores also have reached their speed limits because no additional transistors can be added to the core's. Because of this some proclaim that [[Moore's Law]] is dead because of that.
 ## Moore's Law
 Moore made a prediction in 1975 that circuit complexity doubles every 18 months. Whereby the complexity was calculated as the amount of transistors.
 The exponential transistor growth, resulted in exponential growth of processor speeds.
@@ -102,16 +140,24 @@ In computer networking, hypercube networks are a type of network topology used t
 | **Hypertree** **(4D)** | $2^{h}\;(2^{h+1}-1)$            | $2h$       | $2^{h+1}$           | $\textasciitilde 6$ | Only in theory                    |
 | **Hypercube**          | $2^{n}$                         | $n$        | $2^{k-1}$           | $n$                 | Complexer for multiple dimensions |
 When building a cluster computing of cheap commodities you are not going to use different topologies. But for super computers different topologies are used for different applications. 
-Tree is better for broadcasting
+Tree is better for broadcasting.
+
+When comparting the different topologies the hypercube has and excellent diameter (logarithmic) and the best bisection width (exponential in number of dimensions N), but its number of edges increases with the dimension, making it difficult to build in practice.
+A binary tree also has an excellent (logarithmic) diameter but very poor bisection width (of 1). A mesh has a reasonable diameter and bisection width.
+
+## Combination of Topologies
+Some machines use different topologies. For example, the Blue Gene has a network with a 3D mesh topology and another network with a tree topology
+It's usefull to have different topologies because you can use the strengths they will provide.
+A mesh has much better bisection width, a tree has a better diameter ($\log(P)$ versus $\sqrt{P}$, so it depends on the application which one is best.
 # Types of Parallel Machines
 ## Processor Arrays
-A [CPU](Central Processing Unit) whereby the instructions are designed to operate efficiently and effectively on large 1D-arrays / [vectors](Linear Algebra). This makes that these CPU's are highly specialized in a certain task, but don't have much uses besides that.
+A [CPU](Central%20Processing%20Unit) whereby the instructions are designed to operate efficiently and effectively on large 1D-arrays / [vectors](Linear%20Algebra). This makes that these CPU's are highly specialized in a certain task, but don't have much uses besides that.
 
 In the front-end the CPU is just a sequential machine that executes programs and broadcast the vector operations to the Processing Elements (PE).
 The PE's perform operations on its part of the vector, for example the end.
-The ideas of vector computing are now applied in CPU-extensions and [GPU's](Graphics Processing Unit)
+The ideas of vector computing are now applied in CPU-extensions and [GPU's](Graphics%20Processing%20Unit)
 
-Within [Flynn's Taxonomy](Flynn's taxonomy) vector computers are SIMD
+Within [[Flynn's Taxonomy]] vector computers are SIMD
 
 Adding two groups of 10 numbers together on a normal CPU:
 ```armasm
@@ -150,7 +196,7 @@ Current day CPU's have a large cache designed to store frequently accessed data 
 
 In contrast the CPU the GPU are undoing all the architecture upgrades that happened the last decade to the CPU. Instead of being good at everything it has a large amount of smaller chips that can do a massive amount of small computations. These computations aren't complex but you can parallelized it easier. 
 ![[Pasted image 20240911115707.png]]
-## Shared-Memory Multiprocessors
+## Shared-Memory Multiprocessors (SMM)
 Multiple processors accessing a common global shared-memory space connected via a bus, to work on tasks. Each processor can read from and write to this shared memory.
 
 Within this architecture the bus can become the bottle neck of the system because all the data needs to flow through it.  A cache can be added to decrease the traffic of the bus so that frequently accessed data is stored locally.
@@ -164,38 +210,25 @@ Current super computers are collections of shared-memory that are connected by a
 This makes the system a Distributed system
 ![[Pasted image 20240911123225.png]]
 
-## Non-Uniform Memory Access Multiprocessors
-(NUMA)
+## Non-Uniform Memory Access Multiprocessors (NUMA)
 An hardware architecture where the physical memory is distributed within a system and were all the processor units can access it. While processors can access all memory, the performance is optimized when they use their own local memory. Because of this the memory access time is not-uniform.
 
 The idea of this is now applied within multi-core systems.
 
 ![[Pasted image 20240911124645.png]]
-## Distributed-Memory Multiprocessors
+## Distributed-Memory Multiprocessors (DMM)
 Within a distributed-memory multiprocessors each processors has only it's local memory.
 The processors communicate with each other by sending messages over a network. It uses no-remote-memory-access (NORMA) machines. 
 Computational tasks can only operate on local data, and if remote data are required, the computational task must communicate with one or more remote processors. In contrast, a shared memory multiprocessor offers a single memory space used by all processors. Processors do not have to be aware where data resides, except that there may be performance penalties, and that race conditions are to be avoided.
 ![[A-distributed-memory-multiprocessor-The-key-distinction-between-this-and-the-shared-bus_Q320.jpg]]
 For the connection routing of message's is important such as packet or circuit-switched message routing.
-## Distributed Shared Memory
+## Distributed Shared Memory (DSM)
 Memory architecture where physically separated memories can be addressed as a single shared address space. The term "shared" does not mean that there is a single centralized memory, but that the address space is shared—i.e., the same physical address on two processors refers to the same location in memory.
 
 It combines the easy programming of the shared memory with the scalability of the distributed memory.
-## Routing
-All the information from node A to node B is transferd via all the nodes in between
-### Packet-switched
-Packet Switching in computer networks is a method of transferring data to a network in the form of packets. In order to transfer the file fast and efficiently over the network and minimize the transmission latency, the data is broken into small pieces of variable length, called Packet.
-At the destination, all these small parts (packets) have to be reassembled, belonging to the same file. A packet is composed of a payload and various control information. No pre-setup or reservation of resources is needed.
-![[4514-660.png]]
-### Circuit-switched
-Circuit Switching is a type of switching, in which a connection is established between the source and destination beforehand. This connection receives the complete bandwidth of the network until the data is transferred completely. However, circuit switching can be inefficient and costly due to its requirement for dedicated resources, making it less suitable for high-traffic or large-scale networks. In this article, we will discuss every point about Circuit Switching.
-![[Circuit-Switching.webp]]
-
-### Wormhole routing
-Wormhole routing is a unique case of virtual cut-through, where the buffers at the intermediate nodes are the size of a flit. The network latency is equal to in virtual cut-through and thus autonomous of the communication distance. The first bits look around to find the optimal rout, whereby the rest of the information follows after. This gives the advantage that not all data has to been send to the next processor.
-
-The advantage of wormhole routing over circuit switching and virtual cut-through appears in networks where contention is not negligible. In circuit switching, once a channel is assigned to a message, it cannot be used by other messages until the channels become free. In virtual cut-through, blocked messages should be saved in the buffer of intermediate nodes.
-![[Flit-and-Wormhole-Routing-of-Packet-3795681904.png]]
+## Similarities and differences
+#Important
+In both DSM and Non-Uniform Memory Access (NUMA) multiprocessor, memory is distributed, each machine can access all memory, but the local memory is faster to access than other memory. DSM is software, NUMA is hardware; therefore the differences between local/remote access times are much more profound for DSM than for NUMA.
 
 ## Flynn's Taxonomy
 |                          | Single Data | Multiple Data |
@@ -214,6 +247,24 @@ The advantage of wormhole routing over circuit switching and virtual cut-through
 **MIMD:** 
 - Multiple Instruction Multiple Data  
 - Multiprocessors and multicomputers
+
+# Routing
+All the information from node A to node B is transferd via all the nodes in between
+## Packet-switched
+Packet Switching in computer networks is a method of transferring data to a network in the form of packets. In order to transfer the file fast and efficiently over the network and minimize the transmission latency, the data is broken into small pieces of variable length, called Packet.
+At the destination, all these small parts (packets) have to be reassembled, belonging to the same file. A packet is composed of a payload and various control information. No pre-setup or reservation of resources is needed.
+![[4514-660.png]]
+## Circuit-switched
+Circuit Switching is a type of switching, in which a connection is established between the source and destination beforehand. This connection receives the complete bandwidth of the network until the data is transferred completely. However, circuit switching can be inefficient and costly due to its requirement for dedicated resources, making it less suitable for high-traffic or large-scale networks. In this article, we will discuss every point about Circuit Switching.
+![[how_circuit_switching_works-f_mobile-966466774.png]]
+
+## Wormhole routing
+Wormhole routing is a unique case of virtual cut-through, where the buffers at the intermediate nodes are the size of a flit. The network latency is equal to in virtual cut-through and thus autonomous of the communication distance. The first bits look around to find the optimal rout, whereby the rest of the information follows after. This gives the advantage that not all data has to been send to the next processor.
+
+The advantage of wormhole routing over circuit switching and virtual cut-through appears in networks where contention is not negligible. In circuit switching, once a channel is assigned to a message, it cannot be used by other messages until the channels become free. In virtual cut-through, blocked messages should be saved in the buffer of intermediate nodes.
+![[Flit-and-Wormhole-Routing-of-Packet-3795681904.png]]
+
+
 
 # Blue Gene/L
 ![[Pasted image 20241014173630.png]]Blue Gene uses the following network:

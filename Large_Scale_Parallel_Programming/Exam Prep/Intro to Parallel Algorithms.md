@@ -81,7 +81,7 @@ There are different ways to parallelize this algorithm
 3. Each worker computes $N/P$ rows of C
 
 ## Algorithm 1
-**Each worker computes a single entry of C**
+> ***Each worker computes a single entry of C***
 ### Data Dependencies
 ![[Pasted image 20241002102507.png]]
 
@@ -135,7 +135,7 @@ Same reason as for the communication complexity.
 **Ratio communication over complexity:** $O(1)$
 $$ O(1) = \frac{O(N)}{O(N)} $$
 ## Algorithm 2
-**Each worker computes a single row of C**
+>***Each worker computes a single row of C***
 ### Data dependencies
 ![[Pasted image 20241002105432.png]]
 Each entry of `C[i,j]` needs to know column `i` in $A$ and row `j` in $B$.
@@ -184,7 +184,7 @@ $$ O(1) = \frac{O(N^2)}{O(N^2)} $$
 
 
 ## Algorithm 3
-**Each worker computes $N/P$ rows of C**
+> ***Each worker computes $N/P$ rows of C***
 ### Data dependencies
 ![[Pasted image 20241002110234.png]]
 The worker still needs everything from $B$, but also get multiple rows from $A$.
@@ -258,7 +258,62 @@ In this case, the ratio between communication and computation is $O(P/N)$. If th
 - We measured the theoretical parallel performance by computing the complexity of communication over computation
 - We measured the actual performance using the parallel speedup and parallel efficiency
 
-# Jacobi
+# Jacobi Method
+In numerical [linear algebra](Linear%20Algebra), the Jacobi method (a.k.a. the Jacobi iteration method) is an iterative algorithm for determining the solutions of a strictly diagonally dominant system of linear equations. Each diagonal element is solved for, and an approximate value is plugged in. The process is then iterated until it converges. This algorithm is a stripped-down version of the Jacobi transformation method of matrix diagonalization. The method is named after [[Carl Gustav Jacob Jacobi]]. 
+
+One of the main applications of the Jacobi method is to solve the equations resulting from boundary value problems (BVPs). I.e., given the values at the boundary (of a grid), we are interested in finding the interior values that fulfill a certain equation.
+![[Untitled 4.png]]
+
+When solving a [Laplace equation](https://en.wikipedia.org/wiki/Laplace%27s_equation) in 1D, the Jacobi method leads to the following iterative scheme: The entry $i$ of vector $u$ at iteration $t+1$ is computed as:
+$$
+u^{t+1}_i = \frac{u^t_{i-1} + u^t_{i+1}}{2}
+$$
+## A serial implementation
+```julia
+function jacobi_with_tol(n,tol)
+    u = zeros(n+2)
+    u[1] = -1
+    u[end] = 1
+    u_new = copy(u)
+    while true
+        diff = 0.0
+        for i in 2:(n+1)
+            ui_new = 0.5*(u[i-1]+u[i+1])
+            u_new[i] = ui_new
+            diff_i = abs(ui_new-u[i])
+            diff = max(diff_i,diff)            
+        end
+        if diff < tol
+            return u_new
+        end
+        u, u_new = u_new, u
+    end
+    u
+end
+```
+
+What can we parallise?
+Look at the two nested loops in the sequential implementation:
+```julia
+for t in 1:nsteps
+    for i in 2:(n+1)
+        u_new[i] = 0.5*(u[i-1]+u[i+1])
+    end
+    u, u_new = u_new, u
+end
+```
+- The outer loop over `t` cannot be parallelized. The value of `u` at step `t+1` depends on the value at the previous step `t`.
+- The inner loop is trivially parallel. The loop iterations are independent (any order is possible).
+
+## Parallelism
+Remember that a sufficiently large grain size is needed to achieve performance in a distributed algorithm. For Jacobi, one could update each entry of vector `u_new` in a different process, but this would not be efficient. Instead, we use a parallelization strategy with a larger grain size that is analogous to the algorithm 3 we studied for the matrix-matrix multiplication:
+
+- Data partition: each worker updates a consecutive section of the array `u_new`
+
+The following figure displays the data distribution over 3 processes.
+![[Untitled 5.png]]
+
+
 # All Pairs of Shortest Paths (ASP)
 # LEQ
 # Traveling Sales Problem
