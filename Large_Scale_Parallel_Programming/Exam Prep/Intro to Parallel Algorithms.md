@@ -313,7 +313,13 @@ Remember that a sufficiently large grain size is needed to achieve performance i
 The following figure displays the data distribution over 3 processes.
 ![[Untitled 5.png]]
 
+When updating an entry in the interior you only need locally stored vectors.
+The exterior entries need an entry from another CPU.
+![[Untitled.png]]
 
+These cells are called **ghost / boundary cells**. Ghost cells represent the missing data dependencies in the data owned by each process. After importing the appropriate values from the neighbour processes one can perform the usual sequential Jacobi update locally in the processes.
+## Parallelization strategies
+## Gauss-Seidel method
 # All Pairs of Shortest Paths (ASP)
 # LEQ
 # Traveling Sales Problem
