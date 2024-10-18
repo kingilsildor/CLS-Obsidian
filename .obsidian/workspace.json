@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "8b114a59f39daa88",
+    "type": "split",
+    "children": [
+      {
+        "id": "26e19469fa682897",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f994c79f4787725e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Introduction to Computational Science.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introduction to Computational Science"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cca1be9db80dcdb2",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f458691c62edd8c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3a2fe84b683d4b3f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "File explorer"
+            }
+          },
+          {
+            "id": "0db2d59ba806840b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fc251383ad3ec85b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "828d472465bf525d",
+    "type": "split",
+    "children": [
+      {
+        "id": "783b51eb8ebfc44f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2475d68a3c65fb4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Introduction to Computational Science.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Introduction to Computational Science"
+            }
+          },
+          {
+            "id": "be12f45eba938a21",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Introduction to Computational Science.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Introduction to Computational Science"
+            }
+          },
+          {
+            "id": "07223a80f8ca98ec",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "80dde8df2f977f00",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Introduction_to_Computational_Science/Introduction to Computational Science.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Introduction to Computational Science"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "f994c79f4787725e",
+  "lastOpenFiles": [
+    "Introduction_to_Computational_Science/Lectures/Introduction to Infectious Disease.md",
+    "Introduction_to_Computational_Science/Lectures/Temporal Forcing.md",
+    "Temporal Forcing.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Parallel Algorithms.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Intro to Julia.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Asynchronous and distributed computing.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Algorithm Applications.md",
+    "Untitled.png",
+    "_images/Untitled.png",
+    "_images/Untitled 5.png",
+    "_images/Untitled 4.png",
+    "_images/Untitled 3.png",
+    "_images/Untitled 2.png",
+    "_images/Untitled 1.png",
+    "_images/Pasted image 20241016143735.png",
+    "_images/how_circuit_switching_works-f_mobile-966466774.png",
+    "Untitled 5.png",
+    "Introduction_to_Computational_Science/Lectures/Meta Populatie.md",
+    "Introduction_to_Computational_Science/Introduction to Computational Science.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/MPI.md",
+    "Large_Scale_Parallel_Programming/Exam Prep/Parallel Machines.md",
+    "Large_Scale_Parallel_Programming/Large Scale Parallel Programming.md"
+  ]
+}
