@@ -259,7 +259,7 @@ In this case, the ratio between communication and computation is $O(P/N)$. If th
 - We measured the actual performance using the parallel speedup and parallel efficiency
 
 # Jacobi Method
-In numerical [linear algebra](Linear%20Algebra), the Jacobi method (a.k.a. the Jacobi iteration method) is an iterative algorithm for determining the solutions of a strictly diagonally dominant system of linear equations. Each diagonal element is solved for, and an approximate value is plugged in. The process is then iterated until it converges. This algorithm is a stripped-down version of the Jacobi transformation method of matrix diagonalization. The method is named after [[Carl Gustav Jacob Jacobi]]. 
+In numerical [linear algebra](Linear%20Algebra), the Jacobi method (a.k.a. the Jacobi iteration method) is an iterative algorithm for determining the solutions of a strictly diagonally dominant system of linear equations. Each diagonal element is solved for, and an approximate value is plugged in. The process is then iterated until it converges. This algorithm is a stripped-down version of the Jacobi transformation method of matrix diagonalization. The method is named after [[Carl Gustav Jacob Jacobi]].  
 
 One of the main applications of the Jacobi method is to solve the equations resulting from boundary value problems (BVPs). I.e., given the values at the boundary (of a grid), we are interested in finding the interior values that fulfill a certain equation.
 ![[Untitled 4.png]]
@@ -267,6 +267,11 @@ One of the main applications of the Jacobi method is to solve the equations resu
 When solving a [Laplace equation](https://en.wikipedia.org/wiki/Laplace%27s_equation) in 1D, the Jacobi method leads to the following iterative scheme: The entry $i$ of vector $u$ at iteration $t+1$ is computed as:
 $$
 u^{t+1}_i = \frac{u^t_{i-1} + u^t_{i+1}}{2}
+$$
+The algorithm can be done in multiple dimensions. The important thing is that you need neighbors to calculate the center value. The formula for 2D:
+
+$$
+u^{t+1}_{(i,j)} = \frac{u^t_{(i-1,j)} + u^t_{(i+1,j)} + u^t_{(i,j-1)} + u^t_{(i,j+1)}}{4}
 $$
 ## A serial implementation
 ```julia
@@ -317,8 +322,31 @@ When updating an entry in the interior you only need locally stored vectors.
 The exterior entries need an entry from another CPU.
 ![[Untitled.png]]
 
-These cells are called **ghost / boundary cells**. Ghost cells represent the missing data dependencies in the data owned by each process. After importing the appropriate values from the neighbour processes one can perform the usual sequential Jacobi update locally in the processes.
+These cells are called **ghost / boundary cells**. Ghost cells represent the missing data dependencies in the data owned by each process. After importing the appropriate values from the neighbor processes one can perform the usual sequential Jacobi update locally in the processes.
+![[Pasted image 20241018201209.png]]
+
 ## Parallelization strategies
+- ***1D block*** row partition (each worker handles a subset of consecutive rows and all columns)
+- ***2D block*** partition (each worker handles a subset of consecutive rows and columns)
+- ***2D cyclic*** partition (each workers handles a subset of alternating rows ans columns
+
+![[Pasted image 20241018201351.png]]
+
+
+| Partition | Message per iteration | Communication per worker | Computation per worker | Ratio communication/computation |
+| --------- | --------------------- | ------------------------ | ---------------------- | ------------------------------- |
+| 1D block  | 2                     | $O(N)$                   | $N^2/P$                | $O(P/N)$                        |
+| 2D block  | 4                     | $O(N/\sqrt{P})$          | $N^2/P$                | $O(\sqrt{P}/N)$                 |
+| 2D cyclic | 4                     | $O(N^2/P)$               | $N^2/P$                | $O(1)$                          |
+So which is the best?
+- Both 1D and 2D block partitions are potentially scalable if $P<<N$
+- The 2D block partition has the lowest communication complexity
+- The 1D block partition requires to send less messages (It can be useful if the fixed cost of sending a message is high)
+- The best strategy for a given problem size will thus depend on the machine.
+- Cyclic partitions are impractical for this application (but they are useful in others)
+
+If you have a lot of messages it's probably better
+
 ## Gauss-Seidel method
 # All Pairs of Shortest Paths (ASP)
 # LEQ
