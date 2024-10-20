@@ -16,9 +16,9 @@ If we now take a discrete time approach, so we start with $X_t, Y_t, Z_t$ and th
 Based on the assumptions the following formula can be constructed:
 $$
 \begin{align}
-X_{t+\tau} = X_t + \mu - \beta_t Y_t X_t = \mu + X_t(1 - \beta Y_t) \\
-Y_{t+\tau} = \beta X_t Y_t \\
-Z_{t+\tau} = Z_t + Y_t - \mu
+X_{t+\tau} = X_t + \mu - \beta_t Y_t X_t &= \mu + X_t(1 - \beta Y_t) \\
+Y_{t+\tau} &= \beta X_t Y_t \\
+Z_{t+\tau} &= Z_t + Y_t - \mu
 \end{align}
 $$
 
@@ -30,8 +30,8 @@ We will than need to take $1/\alpha$ time steps of duration $\alpha \tau$.
 This results in:
 $$
 \begin{align}
-\frac{Y_{t + \tau}}{Y_t} = (\beta X_{t+\tau})^\alpha \\
-(\frac{Y_{t + \tau}}{Y_t})^\alpha = \beta X_{t+\tau}
+\frac{Y_{t + \tau}}{Y_t} &= (\beta X_{t+\tau})^\alpha \\
+(\frac{Y_{t + \tau}}{Y_t})^\alpha &= \beta X_{t+\tau}
 \end{align}
 $$
 
