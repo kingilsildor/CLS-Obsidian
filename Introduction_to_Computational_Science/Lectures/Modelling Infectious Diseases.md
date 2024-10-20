@@ -62,6 +62,8 @@ $$
 ## Naïve SIR phase plot
 ![[Pasted image 20240915211156.png]]
 # [ODE](Ordinary%20Differential%20Equation) solution
+
+
 # SIR Model (without demography)
 The transition from **S → I** is determined by:
 1. The amount of infectious individuals
@@ -69,6 +71,15 @@ The transition from **S → I** is determined by:
 3. The probability of transmission given contact
 
 The force of infection $\lambda$ is the per capita rate at which susceptible are getting infected, so the rate at which infected are produced is $\lambda X$
+
+#TODO 
+1. **Threshold phenomena**
+2. **Epidemic Burnout**
+3. Epidemic Curve
 # SIR Model (with demography)
+#TODO 
+1. **Fixed points**
+2. Stability Analysis
+
 # Introduction to Numerical Solvers
 # SIR Variants
