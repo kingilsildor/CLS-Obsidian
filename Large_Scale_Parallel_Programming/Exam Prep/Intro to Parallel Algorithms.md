@@ -320,7 +320,7 @@ The following figure displays the data distribution over 3 processes.
 
 When updating an entry in the interior you only need locally stored vectors.
 The exterior entries need an entry from another CPU.
-![[Untitled.png]]
+![[Untitled6.png]]
 
 These cells are called **ghost / boundary cells**. Ghost cells represent the missing data dependencies in the data owned by each process. After importing the appropriate values from the neighbor processes one can perform the usual sequential Jacobi update locally in the processes.
 ![[Pasted image 20241018201209.png]]

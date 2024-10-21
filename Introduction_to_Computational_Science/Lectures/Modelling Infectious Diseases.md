@@ -176,9 +176,6 @@ $$
 ![[Pasted image 20240915211139.png]]
 ## Naïve SIR phase plot
 ![[Pasted image 20240915211156.png]]
-# [ODE](Ordinary%20Differential%20Equation) solution
-
-
 # SIR Model (without demography)
 The transition from **S → I** is determined by:
 1. The amount of infectious individuals
@@ -345,12 +342,248 @@ $$
 R_0 &= \frac{\beta}{\gamma + \mu} 
 \end{align*}
 $$
-
 ## ***Fixed Points***
+$$
+\begin{align}
+(2.1)\;\; \frac{dS^*}{dt} &= \mu - \beta S^* I^* - \mu S^* \\
+(2.2)\;\; \frac{dI^*}{dt} &= \beta S^* I^* - \gamma I^* - \mu I^* \\
+(2.3)\; \frac{dR^*}{dt} &= \gamma I^* - \mu R^* \\
+\end{align}
+$$
+A fixed points happens when $I^*$ and $R^*=0$, giving the point $(1,0,0)$. This is the disease free state based on eq (2.3).
+Now look at:
+$$
+\begin{align}
+\frac{dI^*}{dt} &= \beta S^* I^* - \gamma I^* - \mu I^* = 0 \\
+\frac{dI^*}{dt} &= I^* (\beta S^* - \gamma - \mu) = 0 \\
+\\
+\text{then if:}\\
+S^* &= \frac{\gamma + \mu}{\beta} \\
+S^* &= \frac{1}{R_0}\\
+\\
+\text{we have:}\\
+\frac{dI^*}{dt}&=0 \\
+\\
+\text{subsitute in eq (2.1):} \\
+\frac{dS^*}{dt} &= \mu - \frac{\beta I^*}{R_0} - \frac{\mu}{R_0} = 0 \\
+\\
+I^* &= \frac{\mu - \frac{\mu}{R_0}}{\frac{\beta}{R_0}} \\
+&= \frac{\mu}{\beta}(R_0-1)
+\\
+\text{then:} \\
+R^* &= 1 - S^* - I^I \\
+&= 1 - \frac{1}{R_0} - \frac{\mu}{\beta}(R_0 - 1) \\
+&= \frac{\gamma}{\beta}(R_0 - 1)
+\\
+\text{So our endemic fixed point:} \\
+\left(\frac{1}{R_0}, \frac{\mu}{\beta}(R_0 - 1), \frac{\gamma}{\beta}(R_0 -1) \right)
+\end{align}
+$$
+
+
+
+## Equilibrium
+$$
+\begin{align}
+S^* &= \frac{\gamma + \mu}{\beta} \\
+I^* &= \frac{\mu (1 - S^*)}{\gamma + \mu}
+\end{align}
+$$
+
 ## Stability Analysis
+We can look at values near or around fixed points to see how the system behaves.
+Given $S$ and $I$ we know $R$ so we get 2 variables.
+![[Pasted image 20241021120529.png]]
+
+Given a system:
+$$
+\frac{dx}{dt} = ax + by \;\; \frac{dy}{dt} = cx + dy
+$$
+We can calculate what happens around a fixed point based on the ***eigen vector & eigen values***.
+$$
+\begin{align*}
+\overline X(t) &= \overline V e^{\lambda t} \\
+\frac{d \overline X}{dt} &= \overline V \lambda e^{\lambda t} \\
+\\
+\text{Subsitute the result in the original formula:} \\
+\frac{d \overline X}{dt} = A \overline X &\rightarrow \lambda e^{\lambda t} \overline V = e^{\lambda t} A \overline V\\
+&\rightarrow \lambda \overline V = A \overline V\\
+\\
+\text{det}(A-\lambda I) = 0 \\
+\text{det}
+\begin{bmatrix}
+a - \lambda & b \\
+c & d - \lambda
+\end{bmatrix} \\
+(a - \lambda)(d - \lambda) - bc &= ad - \lambda d + \lambda^2 - bc \\
+&= \lambda^2 - \lambda(a + b) + ad -bc \\
+\\
+\text{where:}\\
+a + d &= \tau \;\; \text{trace of matrix} \\
+ad + bc &= \Delta \;\; \text{det of matrix} \\
+\\
+
+\lambda_1 =\frac{\tau + \sqrt{\tau^2 - 4 \Delta}}{2} \\
+\lambda_2 =\frac{\tau - \sqrt{\tau^2 - 4 \Delta}}{2}
+\end{align*}
+$$
+$$
+\begin{align*}
+\tau &= \lambda_1 + \lambda_2 \\
+\Delta &= \lambda_1 \lambda_2
+\end{align*}
+$$
+
+|         | Stable? | $\Delta$     |                            | $\tau$     | Set          |                     |
+| ------- | ------- | ------------ | -------------------------- | ---------- | ------------ | ------------------- |
+| Saddle  |         |              |                            | $\tau < 0$ |              |                     |
+| Centres |         | $\Delta = 0$ |                            | $\tau > 0$ |              |                     |
+| Node    | True    | $\Delta < 0$ | $\lambda_1, \lambda_2 < 0$ | $\tau > 0$ | $\mathbb{R}$ | $\tau^2 > 4 \Delta$ |
+| Node    | False   | $\Delta > 0$ | $\lambda_1, \lambda_2 > 0$ | $\tau > 0$ | $\mathbb{R}$ | $\tau^2 > 4 \Delta$ |
+| Spiral  | True    | $\Delta < 0$ | $\lambda_1, \lambda_2 < 0$ | $\tau > 0$ | $\mathbb{C}$ | $\tau^2 < 4 \Delta$ |
+| Spiral  | False   | $\Delta > 0$ | $\lambda_1, \lambda_2 > 0$ | $\tau > 0$ | $\mathbb{C}$ | $\tau^2 < 4 \Delta$ |
+
+
+
+### Example using [[Lokta-Voltera]]
+$$
+\frac{dX}{dt} = 3x - x^2 - 2xy \;\; \frac{dY}{dt} = 2y - y^2 - xy
+$$
+Their are 4 possible fixed points within this system:
+$$
+(0,0), (x=0, y\neq0), (x\neq0, y=0), (x\neq0, y\neq0)
+$$
+Given the formula this results in:
+$$
+\begin{align}
+x=0, y\neq0 \\
+2y-y^2&=0 \\
+y&=2 \\
+(0,2)\\
+\\
+x\neq0, y=0 \\
+3x-x^2&=0 \\
+x&=3 \\
+(3,0) \\
+\\
+x\neq0, y\neq0 \\
+\text{divide by}\; x \;\text{on}\frac{dx}{dt} &\rightarrow 3 = x + 2y\\
+\text{divide by}\; y \;\text{on}\frac{dy}{dt} &\rightarrow 2 = y + x \\
+(1,1)
+\end{align}
+$$
+To classify our fixed points we change the formula to:
+$$
+\begin{align}
+f(x, y) = \frac{dx}{dt} &= x(3-x-2y) = 3x-x^2-2xy \\
+g(x, y) = \frac{dy}{dt} &= y(2-y-x) = 2y-y^2-xy 
+\end{align}
+$$
+Calculate the jacobian:
+$$
+J = 
+\begin{bmatrix}
+\frac{\delta f}{\delta x} & \frac{\delta f}{\delta y} \\
+\frac{\delta g}{\delta x} & \frac{\delta g}{\delta y}
+\end{bmatrix}
+= 
+\begin{bmatrix}
+3-2x-2y & -2x \\
+-y & 2-x-2y
+\end{bmatrix}
+$$
+#### Fixed point $0,0$
+$$
+\begin{align}
+J &= 
+\begin{bmatrix}
+3 & 0 \\
+0 & 2
+\end{bmatrix}
+\\
+\lambda_1 &=3, \lambda_2 = 2\\
+\\
+\Delta &= ad -bc \\
+& = 3 \cdot2-0\cdot0\\
+&= 6\\
+\\
+\tau &= a + d \\
+&= 3 +2 \\
+&= 5 \\
+\\
+\tau^2 - 4\Delta &= 0 \\
+\tau^2 &= 4\Delta \\
+5^2 &> 4 \cdot6 \\
+25 &> 24 \\
+\text{so}\;\; \tau^2 &> 4\Delta
+\end{align}
+$$
+So this point is an ***Unstable Node***
+
+#### Fixed point $0,2$
+$$
+\begin{align}
+J &= 
+\begin{bmatrix}
+-1 & 0 \\
+-2 & -2
+\end{bmatrix}
+\\
+\lambda_1 &=-1, \lambda_2 = -2\\
+\\
+\Delta &= ad -bc \\
+& = -1 \cdot-2+2\cdot0\\
+&= 2\\
+\\
+\tau &= a + d \\
+&= -1 + -2 \\
+&= -3 \\
+\\
+\tau^2 - 4\Delta &= 0 \\
+\tau^2 &= 4\Delta \\
+(-3)^2 &> 4 \cdot2 \\
+9 &> 8 \\
+\text{so}\;\; \tau^2 &> 4\Delta
+\end{align}
+$$
+Both eigenvalues negative so a ***Stable Note***
+
+#### Fixed point $3,0$
+$$
+\begin{align}
+J &= 
+\begin{bmatrix}
+-3 & -6 \\
+0 & -1
+\end{bmatrix}
+\\
+\lambda_1 &=-3, \lambda_2 = -1\\
+\end{align}
+$$
+Both eigenvalues negative so a ***Stable Note***
+
+#### Fixed points $(1,1)$
+$$
+\begin{align}
+\Delta 
+\begin{bmatrix}
+-1 & -2 \\
+-1 & -1
+\end{bmatrix}
+ &= 1 - 2 = -1 \\
+\end{align}
+$$
+So $\Delta < 0$ gives us a ***Saddle Point*** 
+![[Pasted image 20241021130646.png]]
+
 ## Oscillatory Dynamics
+Because we have a $\mu$ that is much smaller than the $\gamma$ because people live on average 75 years and recover in a month.
+So we can assume that $\left( \mu R_0^2 \right) << 4\mu (\gamma + \mu)(R_0 -1)$
+We can state we have damped oscillations to endemic state.
+![[Pasted image 20241021131056.png]]
 
-
+When $t \rightarrow \infty$ the oscillations will dampen and an equilibrium will be reached. 
+With a [Fourier analysis](Fourier%20Analysis) the singles can be analysed. Whereby the amplitude of the oscillation will be plot against the frequency (Hz).
 # Numerical solvers
 For any numerical method, we need to create a discretization of our variables.
 ### [[Euler Method]]
@@ -373,8 +606,8 @@ If $\delta t = 0.25$ then:
 We approximate:
 $$
 \begin{align}
-\frac{dy}{dt} = \frac{y_{n+1}-y_n}{\delta t} = f(t_n, y_n) \\
-y_{n+1} = y_n + \delta t \cdot f(t_n, y_n)
+\frac{dy}{dt} &= \frac{y_{n+1}-y_n}{\delta t} = f(t_n, y_n) \\
+y_{n+1} &= y_n + \delta t \cdot f(t_n, y_n)
 \end{align}
 $$
 The error between each time step is $\delta t^2$
@@ -388,9 +621,9 @@ $$
 The Forward Euler becomes:
 $$
 \begin{align}
-y_{n+1} = y_n - \delta t C \cdot y_n \\ 
-y_{n+1} = y_n - (I-\delta t C)y_n \\
-y_{n} = (I-\delta t C)^n y_0
+y_{n+1} &= y_n - \delta t C \cdot y_n \\ 
+y_{n+1} &= y_n - (I-\delta t C)y_n \\
+y_{n} &= (I-\delta t C)^n y_0
 \end{align}
 $$
 A matrix $A^n$ tends to zero for $n \rightarrow \infty$ only if the largest eigenvalue of $A$ has a magnitude smaller than 1.
@@ -399,7 +632,25 @@ With $\lambda_{\text{max}}$ the large eigenvalue of $C$ this results in:
 $$ \delta t < \frac{2}{\lambda_{\text{max}}} $$
 So the timesteps must be small enough
 ### [[Runge-Kutta]]
-#TODO
+Let an initial value problem be specified as follows:
+$$
+\frac{dy}{dy} = f(t, y), \;\; y(t_0) = y_0
+$$
+Nw we pick a step-size $\delta t >0$ and define given a fourth order Runge-Kutta (so, error $O(\delta t^2)$):
+$$
+\begin{align}
+k_1 &= \delta t f(t_n, y_n) \\
+k_2 &= \delta t f\left(t_n + \frac{1}{2} \delta t, y_n + \frac{1}{2}k_1\right) \\
+k_3 &= \delta t f\left(t_n + \frac{1}{2} \delta t, y_n + \frac{1}{2}k_2\right) \\
+k_4 &= \delta t f\left(t_n + \delta t, y_n + k_3 \right) \\
+\\
+\overline y_{n+1} &= \overline y_n + \frac{k_1}{6} + \frac{k_2}{3} + \frac{k_3}{3} + \frac{k_4}{6} + O(\delta t^5) \\
+t_{n+1} &= t_n + \delta t \\
+\end{align}
+$$
+![[Pasted image 20241021132906.png]]
+
+More orders will give a more precise answer, but will take more computational power.
 # Variants
 You can adapt a model framework to different kind of diseases and other problems.
 No need to restrict to 1 model (SEIR for example) if the biology suggest otherwise.

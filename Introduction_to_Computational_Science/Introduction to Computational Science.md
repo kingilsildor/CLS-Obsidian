@@ -4,9 +4,9 @@ tags:
 ---
 1. [[Modelling and Simulation]]
 2. [[Introduction to Infectious Disease]]
-3. Modelling infectious diseases
-4. Temporal Forcing
-5. Meta population
-6. Stochastic Models
+3. [[Introduction_to_Computational_Science/Lectures/Modelling Infectious Diseases|Modelling Infectious Diseases]]
+4. [[Temporal Forcing]]
+5. Stochastic Models
+6. Meta population
 7. Networks
 

@@ -95,7 +95,7 @@ using Distributed
 using ClusterManagers
 addprocs(SlurmManager(128), partition="debug", t="00:5:00")
 ```
-![[Untitled.png]]
+![[Untitled6.png]]
 
 ## Executing code remotely
 The most basic thing we can do with a remote processor is to execute a given function on it. This is done by using function `remotecall`. To make clear how local and remote executions compare, let's call a function locally and then remotely. Next cell uses function `ones` to create a matrix locally. `remotecall` does not return the underlying function, to get the result `fetch` is needed.
