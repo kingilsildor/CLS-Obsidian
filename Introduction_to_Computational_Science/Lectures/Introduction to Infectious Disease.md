@@ -1,4 +1,5 @@
 # Complex system
+## Complex
 Hard to reason about [complex systems](Complex%20Systems) without using computing as a way to model.
 When modelling a complex systems you look at the interactive parts within the system.
 You can't just study a traffic jam by observing a single driver.
@@ -6,6 +7,12 @@ You can't just study a traffic jam by observing a single driver.
 Through interactions of individuals new structures arise.
 These systems have hard to predict phenomena based on small changes
 Cause -> effect is hard to understand.
+
+## Complexity
+Complexity, a scientific theory which asserts that some  systems display behavioral phenomena that are completely inexplicable by any conventional analysis of the systems’  constituent parts. These phenomena, commonly referred to as emergent behaviour, seem to occur in many complex systems involving living organisms, such as a stock market or the  
+human brain
+
+![[Pasted image 20241022110358.png]]
 
 # [[Agent Based Modelling]]
 Simple systems to measure segregation user in [Schelling's Model of Segregation](Different%20Models)
@@ -71,3 +78,12 @@ The phenomenon where information spreads through a [system](System)/[network](Ne
 Spreading of information in the broad sense is a very common phenomenon
 
 Not only diseases can spread but also rumours, tweets or fires.
+
+# Early time behaviour
+"Why do we care about the early behavior of an epidemic?"
+
+Vaccines, cures, and other medical interventions take months to years to develop
+The best way to stop or slow down an epidemic is to be their early so we can:
+- early quarantine
+- early vaccination
+
